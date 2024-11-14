@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-left: 39%;
+            margin-right: 40%;
+            border: 3px solid gray;
+            border-radius: 5px;
+            align-items: center;
+        }
+        label {
+            display: block;
+            margin-left: 28px;
+            margin-top: 10px;
+            
+        }
+        input, textarea, select {
+            width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 25px;
+            
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            width: 87%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 25px;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+           
+        }
+        io{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-left: 20%;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2>
+        <io>Registration Form</io></h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="transgender">Other</option>
+            </select>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" cols="30" rows="5"></textarea>
+            <br>
+            
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+             
+        </form>
+    </div>
+</body>
+</html>
